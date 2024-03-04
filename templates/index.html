@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="static\css\index.css">
+</head>
+<body>
+    <div class="all_items">
+        <div class="box_1">
+            <img src="static\images\IMG_20201208_160716_208.jpg" alt="Profile Image">
+            <h1>SRIKANTH BANOTHU</h1>
+            <div class="HOME">
+                <button>
+                    <p>&#92223;</p>
+                    <ul>HOME</ul>
+                </button>
+            </div>
+            <div class="ABOUT">
+                <button>
+                    <p>&#128100;</p>
+                    <ul>ABOUT</ul>
+                </button>
+            </div>
+            <div class="RESUME">
+                <button>
+                    <p>&#128459;</p>
+                    <ul>Resume</ul>
+                </button>
+            </div>
+        </div>
+        <div class="box_2" >
+            <div class="x" style="background: url('static\\images\\1706605423423.jpg') no-repeat center center fixed; background-size: cover; margin: 0; padding: 0; font-family: Arial, sans-serif;">
+            </div>
+            <div class="b">
+                <h1>ABOUT</h1>
+                <div class="b1">
+                    <ul>&#62;
+                        <b>NAME :</b> 
+                        <p>BANOTHUSRIKANTH<p>
+                    </ul>
+                    <ul>&#62;
+                        <b>AGE: </b>
+                        <p>22</p>
+                    </ul>
+                    <ul>&#62;
+                        <b>GRADUATION:</b>
+                        <p>BTECH</P>
+                    </ul>
+                </div>
+                <div class="b2">
+                    <ul>&#62;
+                        <b>PHONE:</b>
+                        <p> xxxxxxxxx</p>
+                    </ul>
+                    <ul>&#62;
+                        <b>CITY: </b>
+                        <p>HYDERABAD</p>
+                    </ul>
+                    <ul>&#62;
+                        <b>LINKEDIN:</b>
+                        <p>linkedin.com/in/srikanthbanothu2607</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="c" style="background: url('static\\images\\1706605423423.jpg') no-repeat center center fixed; background-size: cover; margin: 0; padding: 0; font-family: Arial, sans-serif;">
+                <h1>RESUME</h1>
+                <div class="d">
+                    <h1>Education</h1>
+                    <div class="d1">
+                        <h1>school</h1>
+                        <ul>Saidaiah Concept School</ul>
+                        <ul>8.3</ul>
+                    </div>
+                    <div class="d2">
+                        <h1>InterMediate</h1>
+                        <ul>Sri Vagdevi Junior College</ul>
+                        <ul> MPC </ul>
+                        <ul> 946 </ul>
+                    </div>
+                    <div class="d3">
+                        <h1>Graduation</h1>
+                        <ul>Chaitanya Bharathi Institute Of Technology</ul>
+                        <ul>Electrical And Electronics Engineering</ul>
+                        <ul>6.33</ul>
+                    </div>
+                </div>
+                <div class="e">
+                   <h1> Skills</h1>
+                   <ul>Python</ul>
+                   <ul>Html</ul>
+                </div>
+            </div>
+            <div class="contact">
+                <h1>CONTACT</h1>
+                <p>&#9993;BANOTHUSRIKANTH267@GMAIL.COM</p>
+                <p>&#9990;9390379057</p>
+                <p>linked in:<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="srikanthbanothu2607" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/srikanthbanothu2607?trk=profile-badge">srikanth banothu</a></div></p>
+                <h1>Present Geolocation</h1>
+                <p id="location-info">Click the button to get your current location.</p>
+
+                <button onclick="getLocation()">Get Location</button>
+
+                <script>
+                    function getLocation() {
+                        if (navigator.geolocation) {
+                            navigator.geolocation.getCurrentPosition(showPosition, showError);
+                        } else {
+                            document.getElementById("location-info").innerHTML = "Geolocation is not supported by this browser.";
+                        }
+                    }
+
+                    function showPosition(position) {
+                        var latitude = position.coords.latitude;
+                        var longitude = position.coords.longitude;
+
+                        document.getElementById("location-info").innerHTML = "Latitude: " + latitude + "<br>Longitude: " + longitude;
+                    }
+
+                    function showError(error) {
+                        switch (error.code) {
+                            case error.PERMISSION_DENIED:
+                                document.getElementById("location-info").innerHTML = "User denied the request for Geolocation.";
+                                break;
+                            case error.POSITION_UNAVAILABLE:
+                                document.getElementById("location-info").innerHTML = "Location information is unavailable.";
+                                break;
+                            case error.TIMEOUT:
+                                document.getElementById("location-info").innerHTML = "The request to get user location timed out.";
+                                break;
+                            case error.UNKNOWN_ERROR:
+                                document.getElementById("location-info").innerHTML = "An unknown error occurred.";
+                                break;
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

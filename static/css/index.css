@@ -1,0 +1,133 @@
+body{
+    background-color: white;
+}
+
+
+.all_items{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.box_1{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    margin-right: 10px;
+    background-color: lightseagreen;
+    height: 1800px;
+    width: 250px;
+}
+
+.box_1>img{
+    height: 120px;
+    width:100px;
+    border-radius: 50%;
+    padding: 5px;
+    border:4px solid lightgrey;
+    margin: 60px;
+    background-color: lightgrey;   
+}
+
+.box_1>h1{
+    color: white;
+    margin: 30px;
+    margin-top: -30px;
+}
+
+.box_1>.HOME>button{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    border: 0px;
+    background: none;
+    cursor: pointer;
+}
+
+.box_1>.HOME>button>p{  
+    height: 20px;
+    width: 20px;
+    padding-left: 20px;
+    color: white;
+
+}
+.box_1>.HOME>button>ul{
+    margin-left: -40px;
+    color: lightslategray;
+}
+.box_1>.ABOUT>button{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    border: 0px;
+    background: none;
+    cursor: pointer;
+}
+.box_1>.ABOUT>button>p{
+    height: 20px;
+    width: 20px;
+    padding-left: 20px;
+}
+.box_1>.ABOUT>button>ul{
+margin-left: -40px;
+color: lightslategray;
+}
+
+.box_1>.RESUME>button{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    border: 0px;
+    background: none;
+    cursor: pointer;
+}
+.box_1>.RESUME>button>p{
+    width: 20px;
+    padding-left: 20px;
+    color: black;
+}
+.box_1>.RESUME>button>ul{
+    margin-left: -40px;
+    color: lightslategray;
+}
+.box_2>.x{
+    width: 1000px;
+    height: 100vh;
+}
+.box_2>.b{
+    display: flex;
+    flex-direction: row;
+}
+.box_2>.b>h1{
+    color: lightskyblue;
+}
+.box_2>.b>.b1>ul>b,.box_2>.b>.b2>ul>b{
+    color: black;
+}
+.box_2>.b>.b1>ul>p,.box_2>.b>.b2>ul>p{
+    padding-left: 10px;
+    color: lightslategray;
+    margin-top: 0px;
+}
+.box_2>.b>.b1>ul,.box_2>.b>.b2>ul{
+    color: blue;
+    display: flex;
+    flex-direction: row;
+
+}
+.box_2>.c{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    height: 100vh;
+}
+.box_2>.c>h1{
+    margin-right: 20px;
+    color: lightskyblue;
+}
+.contact{
+    color: black;
+}
+.contact>h1{
+    color: lightblue;
+}
