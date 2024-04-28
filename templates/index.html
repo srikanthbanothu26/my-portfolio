@@ -12,19 +12,19 @@
             <img src="static\images\IMG_20201208_160716_208.jpg" alt="Profile Image">
             <h1>SRIKANTH BANOTHU</h1>
             <div class="HOME">
-                <button>
+                <button onclick="showHome()">
                     <p>&#92223;</p>
                     <ul>HOME</ul>
                 </button>
             </div>
             <div class="ABOUT">
-                <button>
+                <button onclick="scrollToabout()">
                     <p>&#128100;</p>
                     <ul>ABOUT</ul>
                 </button>
             </div>
             <div class="RESUME">
-                <button>
+                <button onclick="scrollToresume()">
                     <p>&#128459;</p>
                     <ul>Resume</ul>
                 </button>
@@ -33,7 +33,7 @@
         <div class="box_2" >
             <div class="x" style="background: url('static\\images\\1706605423423.jpg') no-repeat center center fixed; background-size: cover; margin: 0; padding: 0; font-family: Arial, sans-serif;">
             </div>
-            <div class="b">
+            <div id="aboutSection" class="b" style="">
                 <h1>ABOUT</h1>
                 <div class="b1">
                     <ul>&#62;
@@ -64,7 +64,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="c" style="background: url('static\\images\\1706605423423.jpg') no-repeat center center fixed; background-size: cover; margin: 0; padding: 0; font-family: Arial, sans-serif;">
+            <div id="resumeSection" class="c" style="">
                 <h1>RESUME</h1>
                 <div class="d">
                     <h1>Education</h1>
@@ -133,6 +133,16 @@
                                 document.getElementById("location-info").innerHTML = "An unknown error occurred.";
                                 break;
                         }
+                    }
+
+                    function scrollToabout() {
+                        var aboutSection = document.getElementById("aboutSection");
+                        aboutSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                    function scrollToresume(){
+
+                        var aboutSection = document.getElementById("resumeSection");
+                        aboutSection.scrollIntoView({ behavior: 'smooth' });
                     }
                 </script>
             </div>
