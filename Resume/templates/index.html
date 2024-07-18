@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="bg-gray-400 m-10">
+    <p class="p-4 text-white italic">
+        To obtain an entry-level Python developer with a strong proficiency in designing and developing
+        robust applications. Skilled in integrating user-facing elements with server-side logic using
+        frameworks like Django and Flask. Adept at implementing security measures, troubleshooting, and
+        upgrading software. Excellent communicator with a solid understanding of front-end technologies
+        and collaborative team dynamics. 
+    </p>
+    <div class="container px-4 py-8 bg-white">
+        {% for x in details %}
+        <div class=" rounded-lg shadow-md overflow-hidden my-8">
+            <div class="relative h-screen w-full bg-center" style="background-image: url('{{ x.preview_image1.url }}'); background-size: cover; background-position: center;">
+                <h1 class="text-center text-2xl italic bg-white">{{x.name.upper}}</h1>
+                <div class="absolute bottom-0 left-0 h-32 w-32">
+                    <img src="{{ x.preview_image2.url }}" class="h-32 w-32">
+                </div> 
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

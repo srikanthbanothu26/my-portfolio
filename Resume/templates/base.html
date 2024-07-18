@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortFolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+          integrity="sha384-qf97I+0o3+D7fK2VFcFhJjRpKP5jWfD5zNhm1Tjo+T8TziqUDG+ThQo2rhJlF+8u" crossorigin="anonymous">
+    {% block child_styles %}
+    {% endblock %}
+
+    {% block child_main_scripts %}
+    {% endblock %}
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-white shadow-md p-5 mb-5">
+        <nav class="flex justify-between items-center">
+            <div>
+                <a href="{% url 'home' %}" class="text-2xl font-bold text-gray-800">My Portfolio</a>
+            </div>
+            <div class="space-x-4">
+                <a class="hover:border-b-2 text-center" href="{% url 'home' %}">Overview</a>
+                <a class="hover:border-b-2 text-center" href="{% url 'education' %}">Education</a>
+                <a class="hover:border-b-2 text-center" href="{% url 'skills' %}">Skills</a>
+                <a class="hover:border-b-2 text-center" href="{% url 'projects' %}">Projects</a>
+                <a class="hover:border-b-2 text-center" href="{% url 'uiapplications' %}">UI Applications</a>
+                <a class="hover:border-b-2 text-center" href="{% url 'workexperience' %}">Work Experience</a> 
+                <a class="hover:border-b-2 text-center" href="{% url 'contact' %}">Contact</a> 
+            </div>
+        </nav>
+    </header>
+
+    {% block content %}
+    {% endblock %} 
+<script>
+
+
+</script>
+
+{% block child_scripts %}
+{% endblock %}
+</body>
+</html>

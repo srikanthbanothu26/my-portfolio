@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<div>
+<h2 class="text-2xl font-bold text-gray-800 mb-4">UI Applications</h2>
+    <div class="bg-white rounded-lg shadow-md p-6 my-6 cursor-pointer">
+        <div class="grid grid-cols-1">
+        {% for detail in details %}
+            {% for uiapp in detail.ui_applications.all %}
+                <li type="1" ><p class="text-gray-700 italic"><b><u>{{ uiapp.title.upper }}</u>:</b></p>
+                <p class="text-gray-700 italic">{{ uiapp.description }}</p>
+                <p class="text-gray-700 text-center">Technologies used: <b class="text-blue-600">{{ uiapp.technologies }}</b></p>
+                </li>
+            
+            {% empty %}
+                <p class="text-gray-700">No UI applications listed.</p>
+            {% endfor %}
+        {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

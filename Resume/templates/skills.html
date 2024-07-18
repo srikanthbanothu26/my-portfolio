@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for x in details %}
+<div>
+    <h2 class="text-2xl font-bold text-gray-800">Skills &amp; Technologies : </h2>
+    <div class="bg-white rounded-lg shadow-md p-6 my-6">
+        
+        {% for skills in x.skills.all%}
+            <p class="text-gray-500 italic font-bold text-2xl ">{{skills.skill}}</p>
+        {% empty %}
+            <p class="text-gray-700">No Skills listed.</p>
+        {% endfor%}
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

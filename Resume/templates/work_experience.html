@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+    <h2 class="text-2xl font-bold text-gray-800">Work Experience :</h2>
+    {% for detail in details %}
+        {% for experience in detail.experience.all %}
+            <div class="bg-white rounded-lg shadow-md p-6 my-6">
+                <h3>Role: <b class="italic">{{ experience.title }}</b></h3>
+                <p>Company name: {{ experience.company_name }}</p>
+                <p>{{ experience.duration_from }} - {{ experience.duration_to }}</p>
+                <p class="bg-gray-400 text-white p-4">{{ experience.description }}</p>
+            </div>
+        {% empty %}
+            <p class="text-gray-700">No workexperience</p>
+        {% endfor %}
+    {% endfor %}
+</div>
+{% endblock %}
