@@ -7,5 +7,4 @@ urlpatterns=[path("", overview , name="home"),
              path("Uiapplications/", Uiapplications, name="uiapplications"),
              path("Workexperience/", Workexperience, name="workexperience"),
              path("Contact/", Contact, name="contact"),
-             
              ]
