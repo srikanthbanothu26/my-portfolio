@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import overview, education, Skills, Projects, Uiapplications, Workexperience, Contact
+from Resume.views import overview, education, Skills, Projects, Uiapplications, Workexperience, Contact
 urlpatterns=[path("", overview , name="home"),
              path("education/", education, name="education"),
              path("Skills/", Skills, name="skills"),
