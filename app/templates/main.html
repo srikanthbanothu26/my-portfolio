@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+{% endblock styles %}
+{% block content %}
+<div class="container">
+    <img src="{{ url_for('static', filename='images/profile.png') }}" alt="image">
+    <div>
+        welcome,
+        <span>i'm Banothu Srikanth</span>
+        <span>i'm a customer support executive,odoo functional consultant,odoo developer and a web developer.</span>
+    </div>
+</div>
+{% endblock content %}

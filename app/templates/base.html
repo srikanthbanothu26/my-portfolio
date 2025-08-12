@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block title %}
+    <title>Portfolio</title>
+    {% endblock title %}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    {% block styles %}
+    {% endblock styles %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            PortFolio
+        </div>
+        <div class="nav-links">
+            <a href="{{ url_for('scripts.home') }}">Home</a>
+            <a href="{{ url_for('scripts.about') }}">About</a>
+            <a href="{{ url_for('scripts.projects') }}">projects</a>
+            <a href="{{ url_for('scripts.skills') }}">Skills</a>
+            <a href="{{ url_for('scripts.education') }}">Education</a>
+            <a href="{{ url_for('scripts.certifications') }}">certifications</a>
+            <a href="{{ url_for('scripts.contact') }}">Contact</a>
+        </div>
+        <div>
+            #Banothu Srikanth
+        </div>
+    </header>
+    <main class="main-content">
+        {% block content %}
+        {% endblock content %}
+    </main>
+</body>
+
+</html>

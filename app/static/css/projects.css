@@ -1,0 +1,32 @@
+.heading{
+    color: rgb(137, 107, 52);
+}
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    height: 50vh;
+}
+
+.project {
+    width: 80%;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-buttons > button {
+    cursor: pointer;
+}

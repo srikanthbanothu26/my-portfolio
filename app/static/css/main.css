@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: rgb(96, 48, 48);
+    font-family: monospace;
+    font-size: 16px;
+    overflow: hidden;
+    height: 100%;
+    font-weight: 500;
+    gap:4px;
+}
+
+.container>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:4px;
+    background-color: whitesmoke;
+    border: 1px solid #ccc;
+    padding: 10px;
+}

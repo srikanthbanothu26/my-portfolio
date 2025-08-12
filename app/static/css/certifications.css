@@ -1,0 +1,26 @@
+.certifications {
+    padding: 20px;
+    color: rgb(124, 49, 49);
+}
+
+.certification {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.certification h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.certification h3 {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+.certification p {
+    margin: 5px 0;
+    font-size: 1em;
+}

@@ -1,0 +1,21 @@
+{% extends "main.html" %}
+{% block title %}
+<title>About</title>
+{% endblock title %}
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+{% endblock %}
+{% block content %}
+<div class="heading">
+    <h1>About me</h1>
+</div>
+<div class="about">
+    <div class="about-text">
+        <span>I’m a results-driven developer with hands-on experience in Odoo and full-stack development.</span>
+        <span>I enjoy solving complex problems and creating scalable backend solutions using Python, Odoo, and
+            Django.</span>
+        <span>Currently working at SIDMEC Technologies as a Junior Odoo developer, handling Odoo ERP
+            systems.</span>
+    </div>
+</div>
+{% endblock content %}

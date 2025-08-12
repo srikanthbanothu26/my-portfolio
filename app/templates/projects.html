@@ -1,0 +1,50 @@
+{% extends "main.html" %}
+{% block title %}
+<title>Projects</title>
+{% endblock title %}
+{% block styles %}
+<link rel="stylesheet" href="/static/css/projects.css">
+{% endblock styles %}
+{% block content %}
+
+<div class="heading">
+    <h1>Projects & Web Applications</h1>
+</div>
+<div class="projects">
+    <div class="project-list">
+        <div class="project" style="display: block;">
+            <h2>Facial Recognition System</h2>
+            <p>Built using Python, OpenCV, and MongoDB. Automates attendance with 85%+ accuracy.</p>
+        </div>
+
+        <div class="project" style="display: none;">
+            <h2>Booking System</h2>
+            <p>Online system for bakery orders using Django, PostgreSQL, and Tailwind CSS.</p>
+        </div>
+
+        <div class="project" style="display: none;">
+            <h2>Inventory Billing in Odoo</h2>
+            <p>Barcode-based inventory, automated invoices, PostgreSQL backend, and custom stock alerts.</p>
+        </div>
+    </div>
+
+    <div class="project-buttons">
+        <button onclick="showProject(0)">1</button>
+        <button onclick="showProject(1)">2</button>
+        <button onclick="showProject(2)">3</button>
+    </div>
+</div>
+
+
+<script>
+    function showProject(index) {
+        const projects = document.querySelectorAll('.project');
+
+        projects.forEach((project, i) => {
+            project.style.display = (i === index) ? 'block' : 'none';
+        });
+    }
+</script>
+
+
+{% endblock content %}

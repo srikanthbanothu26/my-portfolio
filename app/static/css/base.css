@@ -1,0 +1,35 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0%;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-bottom: 2px solid black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links>a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+}
+
+.main-content {
+    height: 80vh;
+    overflow:scroll;
+    background-color: whitesmoke;
+}
