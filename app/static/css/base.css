@@ -12,13 +12,15 @@ header {
     margin: 0%;
     padding: 10px;
     background-color: whitesmoke;
-    border-bottom: 2px solid black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .nav-links {
     display: flex;
     gap: 10px;
+    box-shadow: 4px 4px 8px red;
+    padding: 20px;
+
 }
 
 .nav-links>a {
@@ -30,6 +32,6 @@ header {
 
 .main-content {
     height: 80vh;
-    overflow:scroll;
+    overflow: scroll;
     background-color: whitesmoke;
 }

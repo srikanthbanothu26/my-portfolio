@@ -1,7 +1,7 @@
 .education {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: row;
+    font-size: 16px;
 }
 
 .section {

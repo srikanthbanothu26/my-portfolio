@@ -1,7 +1,6 @@
 .container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     color: rgb(96, 48, 48);
     font-family: monospace;
     font-size: 16px;
@@ -18,6 +17,9 @@
     align-items: center;
     gap:4px;
     background-color: whitesmoke;
-    border: 1px solid #ccc;
     padding: 10px;
+}
+
+.container> div> span{
+    font-size: 18px;
 }
