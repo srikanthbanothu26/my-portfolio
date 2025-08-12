@@ -1,5 +1,5 @@
 from app.__init__ import app
 
 if __name__=="__main__":
-    app.run(debug=False,port=8030)
+    app.run(debug=True,port=8030)
     
